@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /* Neutral */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsla(201, 11%, 66%, 0.5);
+
+    --white: #fff;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#container {
+    width: 100%;
+}
+
+h1 {
+    font-size: clamp(30px, 1rem + 2vw, 55px);
+}
+
+h2 {
+    font-size: clamp(25px, 1rem + 2vw, 40px);
+}
+
+p {
+    font-size: clamp(14px, 0.1rem + 2vw, 16px);
+}
+
+p,
+h5 {
+    color: var(--grayish-blue);
+}
+
+.download {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.ios {
+    background-color: var(--strong-cyan);
+}
+
+.mac {
+    background-color: var(--light-blue);
+}
+
+/* =========================================    HEADER    ========================================= */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    text-align: center;
+    padding: 100px 40px;
+    background-image: url("./Images/bg-header-desktop.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("./Images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header p {
+    max-width: 700px;
+    min-width: 200px;
+}
+
+/* =========================================    MAIN    ========================================= */
+main {
+    aspect-ratio: 1 / 0.65;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 50px 40px;
+    position: relative;
+}
+
+main .main__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+main .main__text p {
+    max-width: 700px;
+    min-width: 200px;
+}
+
+main .mockup {
+    width: 100%;
+    aspect-ratio: 1 / 0.4;
+    display: flex;
+    gap: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+main .mockup .mockup__image {
+    width: 50%;
+    height: 100%;
+    background-image: url("./Images/image-computer.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main .mockup .mockup__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+}
+
+main .mockup p {
+    max-width: 350px;
+    min-width: 200px;
+    margin-top: 10px;
+}
+
+/* =========================================    ACCESS CLIPBOARD    ========================================= */
+.access__clipboard {
+    aspect-ratio: 1 / 0.7;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    text-align: center;
+}
+
+.access__clipboard .access__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.access__clipboard .access__text p {
+    max-width: 650px;
+    min-width: 200px;
+}
+
+.access__clipboard .clipboard__image {
+    width: 60%;
+    aspect-ratio: 1 / 0.7;
+    background-image: url("./Images/image-devices.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* =========================================    SUPERCHARGE    ========================================= */
+.supercharge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.supercharge h2,
+.supercharge h3 {
+    margin-bottom: 15px;
+}
+
+.supercharge .workflow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 200px;
+}
+
+.supercharge .workflow h5 {
+    width: 300px;
+}
+
+.supercharge .supercharge__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.supercharge .box__image1,
+.supercharge .box__image2,
+.supercharge .box__image3 {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.supercharge .box__image1 {
+    background-image: url("./Images/icon-blacklist.svg");
+}
+
+.supercharge .box__image2 {
+    background-image: url("./Images/icon-text.svg");
+}
+
+.supercharge .box__image3 {
+    background-image: url("./Images/icon-preview.svg");
+}
+
+.supercharge .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.supercharge .google,
+.supercharge .ibm,
+.supercharge .microsoft,
+.supercharge .hp,
+.supercharge .vector {
+    width: 200px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: 80% 65%;
+    background-position: center;
+}
+
+.supercharge .google {
+    background-image: url("./Images/logo-google.png");
+}
+
+.supercharge .ibm {
+    background-image: url("./Images/logo-ibm.png");
+}
+
+.supercharge .microsoft {
+    background-image: url("./Images/logo-microsoft.png");
+}
+
+.supercharge .hp {
+    background-image: url("./Images/logo-hp.png");
+    background-size: 80% 80%;
+}
+
+.supercharge .vector {
+    background-image: url("./Images/logo-vector-graphics.png");
+}
+
+/* =========================================    PLATORM    ========================================= */
+.platform {
+    padding: 200px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.platform p {
+    max-width: 550px;
+    min-width: 200px;
+}
+
+/* =========================================    FOOTER    ========================================= */
+footer {
+    margin-top: 150px;
+    height: 400px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: var(--dark-grayish-blue);
+}
+
+footer p,
+footer h5 {
+    color: var(--dark-grayish-blue);
+}
+
+footer .about {
+    height: 50px;
+    display: flex;
+    gap: 100px;
+}
+
+footer .logo {
+    width: 50px;
+    height: 50px;
+    background-image: url("./Images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+footer .f {
+    display: flex;
+    height: 100%;
+    gap: 50px;
+}
+
+footer .f .faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .socials {
+    display: flex;
+    gap: 20px;
+}
+
+footer .facebook,
+footer .twitter,
+footer .instagram {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+footer .facebook {
+    background-image: url("./Images/icon-facebook.svg");
+}
+
+footer .twitter {
+    background-image: url("./Images/icon-twitter.svg");
+}
+
+footer .instagram {
+    background-image: url("./Images/icon-instagram.svg");
+}
+
+footer .rights {
+    position: absolute;
+    bottom: 40px;
+}
+
+/* =========================================    MEDIA    ========================================= */
+@media only screen and (max-width: 1030px) {
+    /* =========================================    HEADER    ========================================= */
+    header {
+        background-image: url("./Images/bg-header-mobile.avif");
+    }
+
+    /* =========================================    MAIN    ========================================= */
+    main {
+        aspect-ratio: 1 / 0.8;
+    }
+
+    main .mockup {
+        gap: 50px;
+        aspect-ratio: 1 / 0.45;
+    }
+
+    main .mockup .mockup__text {
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    header {
+        padding: 100px 15px;
+    }
+
+    main {
+        padding: 50px 15px;
+    }
+
+    .access__clipboard,
+    .supercharge {
+        padding: 0 15px;
+    }
+
+    .platform {
+        padding: 200px 15px;
+    }
+
+    footer {
+        padding: 40px 15px;
+    }
+
+    /* =========================================    MAIN    ========================================= */
+    main {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    main .mockup {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: unset;
+        left: unset;
+    }
+
+    main .mockup .mockup__image {
+        width: 60%;
+        height: unset;
+        aspect-ratio: 1 / 1;
+    }
+
+    main .mockup .mockup__text {
+        gap: 40px;
+    }
+
+    /* =========================================    FOOTER    ========================================= */
+    footer {
+        height: 700px;
+        padding-top: 40px;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    footer .about {
+        height: fit-content;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .logo {
+        width: 70px;
+        height: 90px;
+    }
+
+    footer .f {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer .f .faq {
+        gap: 10px;
+    }
+}
